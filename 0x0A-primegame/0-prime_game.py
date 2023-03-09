@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import random
 
 """Maria and Ben game module"""
 
@@ -41,7 +40,7 @@ def isWinner(x, nums):
                 players[1] = players[1] + 1
                 break
             else:
-                playerPlay = random.choice(curList)
+                playerPlay = curList.pop(0)
                 for k in curList:
                     if k % playerPlay == 0:
                         curList.remove(k)
