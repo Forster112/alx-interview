@@ -53,5 +53,5 @@ def isWinner(x, nums):
         return "Maria"
     elif players[1] > players[0]:
         return "Ben"
-    else:
+    elif players[0] == players[1]:
         return None
